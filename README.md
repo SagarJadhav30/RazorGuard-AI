@@ -4,7 +4,7 @@
 
 RazorGuard AI is a production-grade, defense-only explainable risk management platform for payment fraud detection. It combines machine learning fraud probabilities, deterministic compliance rule overrides, SHAP local feature attributions, and an isolated LLM natural language explanation engine.
 
----
+--- 
 
 ## 🏗️ Monorepo Architecture
 
