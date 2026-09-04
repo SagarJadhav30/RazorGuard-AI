@@ -1,0 +1,35 @@
+{
+  "feature_names": [
+    "amount",
+    "distance_from_home",
+    "distance_from_last_tx",
+    "velocity_1h",
+    "velocity_24h",
+    "ratio_to_median_price",
+    "repeat_retailer",
+    "used_chip",
+    "used_pin",
+    "online_order",
+    "ip_country_mismatch",
+    "device_trust_score",
+    "high_risk_category",
+    "hour_of_day"
+  ],
+  "feature_labels": {
+    "amount": "Transaction Amount ($)",
+    "distance_from_home": "Distance from Home (miles)",
+    "distance_from_last_tx": "Distance from Last Tx (miles)",
+    "velocity_1h": "1-Hour Tx Count",
+    "velocity_24h": "24-Hour Tx Count",
+    "ratio_to_median_price": "Ratio to Historical Median Price",
+    "repeat_retailer": "Repeat Retailer (0/1)",
+    "used_chip": "EMV Chip Used (0/1)",
+    "used_pin": "PIN Entered (0/1)",
+    "online_order": "Online Transaction (0/1)",
+    "ip_country_mismatch": "IP/Billing Country Mismatch (0/1)",
+    "device_trust_score": "Device Trust Score (0.0-1.0)",
+    "high_risk_category": "High-Risk Merchant Category (0/1)",
+    "hour_of_day": "Transaction Hour of Day (0-23)"
+  },
+  "model_type": "LightGBM Classifier"
+}

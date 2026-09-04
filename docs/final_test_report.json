@@ -1,0 +1,889 @@
+{
+  "report_title": "RazorGuard AI - Final System Test Report",
+  "timestamp": "2026-08-26T17:05:38.840111+00:00",
+  "total_execution_time_seconds": 36.83,
+  "summary": {
+    "total_tests": 103,
+    "passed": 103,
+    "failed": 0,
+    "skipped": 0,
+    "success_rate_percentage": 100.0,
+    "overall_status": "PASSED"
+  },
+  "categories": {
+    "System Integration Tests": {
+      "total": 52,
+      "passed": 52,
+      "failed": 0,
+      "pass_rate": 100.0
+    },
+    "Unit Tests": {
+      "total": 9,
+      "passed": 9,
+      "failed": 0,
+      "pass_rate": 100.0
+    },
+    "Model Tests": {
+      "total": 12,
+      "passed": 12,
+      "failed": 0,
+      "pass_rate": 100.0
+    },
+    "API Tests": {
+      "total": 8,
+      "passed": 8,
+      "failed": 0,
+      "pass_rate": 100.0
+    },
+    "Database Tests": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "pass_rate": 100.0
+    },
+    "Frontend Tests": {
+      "total": 6,
+      "passed": 6,
+      "failed": 0,
+      "pass_rate": 100.0
+    },
+    "Security Tests": {
+      "total": 6,
+      "passed": 6,
+      "failed": 0,
+      "pass_rate": 100.0
+    },
+    "Reliability & Failure Mode Tests": {
+      "total": 8,
+      "passed": 8,
+      "failed": 0,
+      "pass_rate": 100.0
+    }
+  },
+  "test_details": [
+    {
+      "nodeid": "tests/test_demo_mode.py::test_demo_scenario_1_returning_customer",
+      "name": "test_demo_scenario_1_returning_customer",
+      "file": "tests/test_demo_mode.py",
+      "outcome": "passed",
+      "duration": 0.0553,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_demo_mode.py::test_demo_scenario_2_new_customer_unusual_amount",
+      "name": "test_demo_scenario_2_new_customer_unusual_amount",
+      "file": "tests/test_demo_mode.py",
+      "outcome": "passed",
+      "duration": 0.0533,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_demo_mode.py::test_demo_scenario_3_multi_attempt_device_reuse",
+      "name": "test_demo_scenario_3_multi_attempt_device_reuse",
+      "file": "tests/test_demo_mode.py",
+      "outcome": "passed",
+      "duration": 0.0692,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_demo_mode.py::test_demo_scenario_4_high_value_legitimate",
+      "name": "test_demo_scenario_4_high_value_legitimate",
+      "file": "tests/test_demo_mode.py",
+      "outcome": "passed",
+      "duration": 0.0898,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_demo_mode.py::test_high_amount_comparison_scenario_4_vs_scenario_3",
+      "name": "test_high_amount_comparison_scenario_4_vs_scenario_3",
+      "file": "tests/test_demo_mode.py",
+      "outcome": "passed",
+      "duration": 0.1259,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_demo_mode.py::test_demo_reset_mechanism",
+      "name": "test_demo_reset_mechanism",
+      "file": "tests/test_demo_mode.py",
+      "outcome": "passed",
+      "duration": 0.0956,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_final_suite.py::test_unit_preprocessing_imputation_and_scaling",
+      "name": "test_unit_preprocessing_imputation_and_scaling",
+      "file": "tests/test_final_suite.py",
+      "outcome": "passed",
+      "duration": 0.0288,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_final_suite.py::test_unit_feature_engineering",
+      "name": "test_unit_feature_engineering",
+      "file": "tests/test_final_suite.py",
+      "outcome": "passed",
+      "duration": 0.0092,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_final_suite.py::test_unit_risk_scoring",
+      "name": "test_unit_risk_scoring",
+      "file": "tests/test_final_suite.py",
+      "outcome": "passed",
+      "duration": 0.0006,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_final_suite.py::test_unit_thresholds",
+      "name": "test_unit_thresholds",
+      "file": "tests/test_final_suite.py",
+      "outcome": "passed",
+      "duration": 0.0003,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_final_suite.py::test_unit_decision_engine_rules",
+      "name": "test_unit_decision_engine_rules",
+      "file": "tests/test_final_suite.py",
+      "outcome": "passed",
+      "duration": 0.0002,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_final_suite.py::test_unit_explanation_generation",
+      "name": "test_unit_explanation_generation",
+      "file": "tests/test_final_suite.py",
+      "outcome": "passed",
+      "duration": 0.0596,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_final_suite.py::test_model_prediction_shape",
+      "name": "test_model_prediction_shape",
+      "file": "tests/test_final_suite.py",
+      "outcome": "passed",
+      "duration": 0.0499,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_final_suite.py::test_model_probability_range",
+      "name": "test_model_probability_range",
+      "file": "tests/test_final_suite.py",
+      "outcome": "passed",
+      "duration": 0.0405,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_final_suite.py::test_model_test_set_evaluation",
+      "name": "test_model_test_set_evaluation",
+      "file": "tests/test_final_suite.py",
+      "outcome": "passed",
+      "duration": 0.0015,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_final_suite.py::test_model_class_imbalance_handling",
+      "name": "test_model_class_imbalance_handling",
+      "file": "tests/test_final_suite.py",
+      "outcome": "passed",
+      "duration": 0.0009,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_final_suite.py::test_api_prediction_endpoint",
+      "name": "test_api_prediction_endpoint",
+      "file": "tests/test_final_suite.py",
+      "outcome": "passed",
+      "duration": 0.0864,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_final_suite.py::test_api_transactions_endpoint",
+      "name": "test_api_transactions_endpoint",
+      "file": "tests/test_final_suite.py",
+      "outcome": "passed",
+      "duration": 0.0312,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_final_suite.py::test_api_audit_endpoint",
+      "name": "test_api_audit_endpoint",
+      "file": "tests/test_final_suite.py",
+      "outcome": "passed",
+      "duration": 0.0169,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_final_suite.py::test_api_metrics_endpoint",
+      "name": "test_api_metrics_endpoint",
+      "file": "tests/test_final_suite.py",
+      "outcome": "passed",
+      "duration": 0.0074,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_final_suite.py::test_db_transaction_and_prediction_storage",
+      "name": "test_db_transaction_and_prediction_storage",
+      "file": "tests/test_final_suite.py",
+      "outcome": "passed",
+      "duration": 0.0563,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_final_suite.py::test_frontend_dashboard_and_investigation_contracts",
+      "name": "test_frontend_dashboard_and_investigation_contracts",
+      "file": "tests/test_final_suite.py",
+      "outcome": "passed",
+      "duration": 0.0013,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_final_suite.py::test_frontend_error_and_loading_states",
+      "name": "test_frontend_error_and_loading_states",
+      "file": "tests/test_final_suite.py",
+      "outcome": "passed",
+      "duration": 0.0006,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_final_suite.py::test_security_no_api_keys_in_source",
+      "name": "test_security_no_api_keys_in_source",
+      "file": "tests/test_final_suite.py",
+      "outcome": "passed",
+      "duration": 0.0756,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_final_suite.py::test_security_input_validation_rejection",
+      "name": "test_security_input_validation_rejection",
+      "file": "tests/test_final_suite.py",
+      "outcome": "passed",
+      "duration": 0.0198,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_final_suite.py::test_security_prompt_injection_resistance",
+      "name": "test_security_prompt_injection_resistance",
+      "file": "tests/test_final_suite.py",
+      "outcome": "passed",
+      "duration": 0.0706,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_final_suite.py::test_security_no_card_numbers_or_credentials_stored",
+      "name": "test_security_no_card_numbers_or_credentials_stored",
+      "file": "tests/test_final_suite.py",
+      "outcome": "passed",
+      "duration": 0.0772,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase11_dashboard.py::test_phase11_frontend_stack_is_configured",
+      "name": "test_phase11_frontend_stack_is_configured",
+      "file": "tests/test_phase11_dashboard.py",
+      "outcome": "passed",
+      "duration": 0.0003,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase11_dashboard.py::test_phase11_dashboard_calls_live_backend_endpoints",
+      "name": "test_phase11_dashboard_calls_live_backend_endpoints",
+      "file": "tests/test_phase11_dashboard.py",
+      "outcome": "passed",
+      "duration": 0.0003,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase11_dashboard.py::test_phase11_requested_views_and_navigation_exist",
+      "name": "test_phase11_requested_views_and_navigation_exist",
+      "file": "tests/test_phase11_dashboard.py",
+      "outcome": "passed",
+      "duration": 0.0002,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase11_dashboard.py::test_phase11_does_not_render_fake_data_when_api_is_empty",
+      "name": "test_phase11_does_not_render_fake_data_when_api_is_empty",
+      "file": "tests/test_phase11_dashboard.py",
+      "outcome": "passed",
+      "duration": 0.0007,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase11_dashboard.py::test_phase11_dashboard_contains_requested_metrics_and_charts",
+      "name": "test_phase11_dashboard_contains_requested_metrics_and_charts",
+      "file": "tests/test_phase11_dashboard.py",
+      "outcome": "passed",
+      "duration": 0.0003,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase11_dashboard.py::test_phase11_styles_are_responsive_and_fintech_dark",
+      "name": "test_phase11_styles_are_responsive_and_fintech_dark",
+      "file": "tests/test_phase11_dashboard.py",
+      "outcome": "passed",
+      "duration": 0.0002,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase12_investigation.py::test_phase12_investigation_is_wired_from_transaction_selection",
+      "name": "test_phase12_investigation_is_wired_from_transaction_selection",
+      "file": "tests/test_phase12_investigation.py",
+      "outcome": "passed",
+      "duration": 0.0005,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase12_investigation.py::test_phase12_loads_detail_and_complete_audit_timeline_from_backend",
+      "name": "test_phase12_loads_detail_and_complete_audit_timeline_from_backend",
+      "file": "tests/test_phase12_investigation.py",
+      "outcome": "passed",
+      "duration": 0.0003,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase12_investigation.py::test_phase12_displays_risk_evidence_and_ai_explanation",
+      "name": "test_phase12_displays_risk_evidence_and_ai_explanation",
+      "file": "tests/test_phase12_investigation.py",
+      "outcome": "passed",
+      "duration": 0.0002,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase12_investigation.py::test_phase12_actions_are_simulated_and_audit_logged",
+      "name": "test_phase12_actions_are_simulated_and_audit_logged",
+      "file": "tests/test_phase12_investigation.py",
+      "outcome": "passed",
+      "duration": 0.0005,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase12_investigation.py::test_phase12_has_gauge_loading_error_and_empty_states",
+      "name": "test_phase12_has_gauge_loading_error_and_empty_states",
+      "file": "tests/test_phase12_investigation.py",
+      "outcome": "passed",
+      "duration": 0.0004,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase13_model_performance.py::test_phase13_model_page_is_wired_to_navigation",
+      "name": "test_phase13_model_page_is_wired_to_navigation",
+      "file": "tests/test_phase13_model_performance.py",
+      "outcome": "passed",
+      "duration": 0.0005,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase13_model_performance.py::test_phase13_displays_all_requested_held_out_metrics",
+      "name": "test_phase13_displays_all_requested_held_out_metrics",
+      "file": "tests/test_phase13_model_performance.py",
+      "outcome": "passed",
+      "duration": 0.0003,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase13_model_performance.py::test_phase13_displays_evaluation_artifacts_and_curves",
+      "name": "test_phase13_displays_evaluation_artifacts_and_curves",
+      "file": "tests/test_phase13_model_performance.py",
+      "outcome": "passed",
+      "duration": 0.0007,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase13_model_performance.py::test_phase13_derives_rates_and_distribution_from_backend_data",
+      "name": "test_phase13_derives_rates_and_distribution_from_backend_data",
+      "file": "tests/test_phase13_model_performance.py",
+      "outcome": "passed",
+      "duration": 0.0004,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase13_model_performance.py::test_phase13_metadata_never_falls_back_to_fake_values",
+      "name": "test_phase13_metadata_never_falls_back_to_fake_values",
+      "file": "tests/test_phase13_model_performance.py",
+      "outcome": "passed",
+      "duration": 0.0004,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase13_model_performance.py::test_phase13_has_loading_and_empty_states",
+      "name": "test_phase13_has_loading_and_empty_states",
+      "file": "tests/test_phase13_model_performance.py",
+      "outcome": "passed",
+      "duration": 0.0003,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase14_financial_impact.py::test_phase14_financial_impact_is_wired_to_navigation",
+      "name": "test_phase14_financial_impact_is_wired_to_navigation",
+      "file": "tests/test_phase14_financial_impact.py",
+      "outcome": "passed",
+      "duration": 0.0004,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase14_financial_impact.py::test_phase14_displays_requested_impact_metrics",
+      "name": "test_phase14_displays_requested_impact_metrics",
+      "file": "tests/test_phase14_financial_impact.py",
+      "outcome": "passed",
+      "duration": 0.0002,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase14_financial_impact.py::test_phase14_uses_configurable_assumptions_and_disclaimers",
+      "name": "test_phase14_uses_configurable_assumptions_and_disclaimers",
+      "file": "tests/test_phase14_financial_impact.py",
+      "outcome": "passed",
+      "duration": 0.0003,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase14_financial_impact.py::test_phase14_has_without_and_with_ai_scenario_comparison",
+      "name": "test_phase14_has_without_and_with_ai_scenario_comparison",
+      "file": "tests/test_phase14_financial_impact.py",
+      "outcome": "passed",
+      "duration": 0.0007,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase14_financial_impact.py::test_phase14_calculations_are_based_on_backend_evaluation_fields",
+      "name": "test_phase14_calculations_are_based_on_backend_evaluation_fields",
+      "file": "tests/test_phase14_financial_impact.py",
+      "outcome": "passed",
+      "duration": 0.0003,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase14_financial_impact.py::test_phase14_metrics_artifact_contains_reproducible_values",
+      "name": "test_phase14_metrics_artifact_contains_reproducible_values",
+      "file": "tests/test_phase14_financial_impact.py",
+      "outcome": "passed",
+      "duration": 0.0002,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase14_financial_impact.py::test_phase14_training_function_emits_same_financial_fields",
+      "name": "test_phase14_training_function_emits_same_financial_fields",
+      "file": "tests/test_phase14_financial_impact.py",
+      "outcome": "passed",
+      "duration": 0.2697,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase15_reliability.py::test_case_1_ml_model_unavailable",
+      "name": "test_case_1_ml_model_unavailable",
+      "file": "tests/test_phase15_reliability.py",
+      "outcome": "passed",
+      "duration": 0.0013,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase15_reliability.py::test_case_2_database_unavailable",
+      "name": "test_case_2_database_unavailable",
+      "file": "tests/test_phase15_reliability.py",
+      "outcome": "passed",
+      "duration": 0.065,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase15_reliability.py::test_case_3_llm_unavailable",
+      "name": "test_case_3_llm_unavailable",
+      "file": "tests/test_phase15_reliability.py",
+      "outcome": "passed",
+      "duration": 0.0011,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase15_reliability.py::test_case_4_invalid_transaction",
+      "name": "test_case_4_invalid_transaction",
+      "file": "tests/test_phase15_reliability.py",
+      "outcome": "passed",
+      "duration": 0.0088,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase15_reliability.py::test_case_5_missing_feature",
+      "name": "test_case_5_missing_feature",
+      "file": "tests/test_phase15_reliability.py",
+      "outcome": "passed",
+      "duration": 0.0593,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase15_reliability.py::test_case_6_unknown_category",
+      "name": "test_case_6_unknown_category",
+      "file": "tests/test_phase15_reliability.py",
+      "outcome": "passed",
+      "duration": 0.05,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase15_reliability.py::test_case_7_extremely_large_amount",
+      "name": "test_case_7_extremely_large_amount",
+      "file": "tests/test_phase15_reliability.py",
+      "outcome": "passed",
+      "duration": 0.0479,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase15_reliability.py::test_case_8_negative_amount",
+      "name": "test_case_8_negative_amount",
+      "file": "tests/test_phase15_reliability.py",
+      "outcome": "passed",
+      "duration": 0.0131,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase15_reliability.py::test_case_9_duplicate_transaction",
+      "name": "test_case_9_duplicate_transaction",
+      "file": "tests/test_phase15_reliability.py",
+      "outcome": "passed",
+      "duration": 0.133,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase15_reliability.py::test_case_10_timeout",
+      "name": "test_case_10_timeout",
+      "file": "tests/test_phase15_reliability.py",
+      "outcome": "passed",
+      "duration": 0.0008,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase15_reliability.py::test_case_11_malformed_llm_response",
+      "name": "test_case_11_malformed_llm_response",
+      "file": "tests/test_phase15_reliability.py",
+      "outcome": "passed",
+      "duration": 0.0009,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase15_reliability.py::test_case_12_prompt_injection",
+      "name": "test_case_12_prompt_injection",
+      "file": "tests/test_phase15_reliability.py",
+      "outcome": "passed",
+      "duration": 0.0649,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase1_ml.py::test_data_generator_schema_and_distribution",
+      "name": "test_data_generator_schema_and_distribution",
+      "file": "tests/test_phase1_ml.py",
+      "outcome": "passed",
+      "duration": 0.0043,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase1_ml.py::test_preset_scenarios",
+      "name": "test_preset_scenarios",
+      "file": "tests/test_phase1_ml.py",
+      "outcome": "passed",
+      "duration": 0.0002,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase1_ml.py::test_model_training_and_heldout_metrics",
+      "name": "test_model_training_and_heldout_metrics",
+      "file": "tests/test_phase1_ml.py",
+      "outcome": "passed",
+      "duration": 0.119,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase1_ml.py::test_load_metrics_summary",
+      "name": "test_load_metrics_summary",
+      "file": "tests/test_phase1_ml.py",
+      "outcome": "passed",
+      "duration": 0.0261,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase2_dataset.py::test_dataset_generation_shape_and_columns",
+      "name": "test_dataset_generation_shape_and_columns",
+      "file": "tests/test_phase2_dataset.py",
+      "outcome": "passed",
+      "duration": 0.0497,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase2_dataset.py::test_reproducibility",
+      "name": "test_reproducibility",
+      "file": "tests/test_phase2_dataset.py",
+      "outcome": "passed",
+      "duration": 0.0285,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase2_dataset.py::test_class_imbalance",
+      "name": "test_class_imbalance",
+      "file": "tests/test_phase2_dataset.py",
+      "outcome": "passed",
+      "duration": 0.062,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase2_dataset.py::test_dataset_quality_audit",
+      "name": "test_dataset_quality_audit",
+      "file": "tests/test_phase2_dataset.py",
+      "outcome": "passed",
+      "duration": 0.0556,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase2_dataset.py::test_data_dictionary_file_exists",
+      "name": "test_data_dictionary_file_exists",
+      "file": "tests/test_phase2_dataset.py",
+      "outcome": "passed",
+      "duration": 0.0008,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase3_eda.py::test_eda_analysis_execution_and_metrics",
+      "name": "test_eda_analysis_execution_and_metrics",
+      "file": "tests/test_phase3_eda.py",
+      "outcome": "passed",
+      "duration": 11.5731,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase3_eda.py::test_eda_charts_and_reports_generated",
+      "name": "test_eda_charts_and_reports_generated",
+      "file": "tests/test_phase3_eda.py",
+      "outcome": "passed",
+      "duration": 0.0008,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase4_preprocessing.py::test_feature_engineering_outputs",
+      "name": "test_feature_engineering_outputs",
+      "file": "tests/test_phase4_preprocessing.py",
+      "outcome": "passed",
+      "duration": 0.0256,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase4_preprocessing.py::test_missing_values_handling",
+      "name": "test_missing_values_handling",
+      "file": "tests/test_phase4_preprocessing.py",
+      "outcome": "passed",
+      "duration": 0.0609,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase4_preprocessing.py::test_unseen_categories_handling",
+      "name": "test_unseen_categories_handling",
+      "file": "tests/test_phase4_preprocessing.py",
+      "outcome": "passed",
+      "duration": 0.0669,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase4_preprocessing.py::test_invalid_boundary_inputs",
+      "name": "test_invalid_boundary_inputs",
+      "file": "tests/test_phase4_preprocessing.py",
+      "outcome": "passed",
+      "duration": 0.0628,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase4_preprocessing.py::test_inference_consistency_and_serialization",
+      "name": "test_inference_consistency_and_serialization",
+      "file": "tests/test_phase4_preprocessing.py",
+      "outcome": "passed",
+      "duration": 0.1762,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase5_models.py::test_metric_calculation",
+      "name": "test_metric_calculation",
+      "file": "tests/test_phase5_models.py",
+      "outcome": "passed",
+      "duration": 0.0147,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase5_models.py::test_model_training_and_artifact_generation",
+      "name": "test_model_training_and_artifact_generation",
+      "file": "tests/test_phase5_models.py",
+      "outcome": "passed",
+      "duration": 12.3057,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase5_models.py::test_predictor_inference",
+      "name": "test_predictor_inference",
+      "file": "tests/test_phase5_models.py",
+      "outcome": "passed",
+      "duration": 0.3338,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase6_risk_engine.py::test_probability_to_score_mapping",
+      "name": "test_probability_to_score_mapping",
+      "file": "tests/test_phase6_risk_engine.py",
+      "outcome": "passed",
+      "duration": 0.0016,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase6_risk_engine.py::test_score_boundaries_mapping",
+      "name": "test_score_boundaries_mapping",
+      "file": "tests/test_phase6_risk_engine.py",
+      "outcome": "passed",
+      "duration": 0.0011,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase6_risk_engine.py::test_preset_scenarios_decisions",
+      "name": "test_preset_scenarios_decisions",
+      "file": "tests/test_phase6_risk_engine.py",
+      "outcome": "passed",
+      "duration": 0.1909,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase6_risk_engine.py::test_sanctioned_country_rule_override",
+      "name": "test_sanctioned_country_rule_override",
+      "file": "tests/test_phase6_risk_engine.py",
+      "outcome": "passed",
+      "duration": 0.1706,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase6_risk_engine.py::test_missing_features_and_invalid_inputs",
+      "name": "test_missing_features_and_invalid_inputs",
+      "file": "tests/test_phase6_risk_engine.py",
+      "outcome": "passed",
+      "duration": 0.1057,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase6_risk_engine.py::test_fallback_strategy_when_model_unavailable",
+      "name": "test_fallback_strategy_when_model_unavailable",
+      "file": "tests/test_phase6_risk_engine.py",
+      "outcome": "passed",
+      "duration": 0.0022,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase7_shap_explainability.py::test_shap_explainer_initialization",
+      "name": "test_shap_explainer_initialization",
+      "file": "tests/test_phase7_shap_explainability.py",
+      "outcome": "passed",
+      "duration": 0.0858,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase7_shap_explainability.py::test_explanation_service_json_schema",
+      "name": "test_explanation_service_json_schema",
+      "file": "tests/test_phase7_shap_explainability.py",
+      "outcome": "passed",
+      "duration": 0.2761,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase7_shap_explainability.py::test_explanation_groundedness",
+      "name": "test_explanation_groundedness",
+      "file": "tests/test_phase7_shap_explainability.py",
+      "outcome": "passed",
+      "duration": 0.2682,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase8_llm_analyst.py::test_sanitize_untrusted_text",
+      "name": "test_sanitize_untrusted_text",
+      "file": "tests/test_phase8_llm_analyst.py",
+      "outcome": "passed",
+      "duration": 0.0007,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase8_llm_analyst.py::test_offline_template_fallback_explanation",
+      "name": "test_offline_template_fallback_explanation",
+      "file": "tests/test_phase8_llm_analyst.py",
+      "outcome": "passed",
+      "duration": 0.0012,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase8_llm_analyst.py::test_prompt_injection_resistance",
+      "name": "test_prompt_injection_resistance",
+      "file": "tests/test_phase8_llm_analyst.py",
+      "outcome": "passed",
+      "duration": 0.2533,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase8_llm_analyst.py::test_decision_integrity_enforcement",
+      "name": "test_decision_integrity_enforcement",
+      "file": "tests/test_phase8_llm_analyst.py",
+      "outcome": "passed",
+      "duration": 0.0009,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase9_10_backend.py::test_phase9_all_required_routes_are_registered",
+      "name": "test_phase9_all_required_routes_are_registered",
+      "file": "tests/test_phase9_10_backend.py",
+      "outcome": "passed",
+      "duration": 0.2716,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase9_10_backend.py::test_phase9_prediction_returns_request_id_and_persists_decision",
+      "name": "test_phase9_prediction_returns_request_id_and_persists_decision",
+      "file": "tests/test_phase9_10_backend.py",
+      "outcome": "passed",
+      "duration": 0.1458,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase9_10_backend.py::test_phase9_validation_rejects_invalid_and_missing_fields",
+      "name": "test_phase9_validation_rejects_invalid_and_missing_fields",
+      "file": "tests/test_phase9_10_backend.py",
+      "outcome": "passed",
+      "duration": 0.0347,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase9_10_backend.py::test_phase9_transaction_summary_metrics_and_audit_endpoints",
+      "name": "test_phase9_transaction_summary_metrics_and_audit_endpoints",
+      "file": "tests/test_phase9_10_backend.py",
+      "outcome": "passed",
+      "duration": 0.1041,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase9_10_backend.py::test_phase9_verification_creates_append_only_audit_event",
+      "name": "test_phase9_verification_creates_append_only_audit_event",
+      "file": "tests/test_phase9_10_backend.py",
+      "outcome": "passed",
+      "duration": 0.2421,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase9_10_backend.py::test_phase10_required_tables_and_indexes_exist",
+      "name": "test_phase10_required_tables_and_indexes_exist",
+      "file": "tests/test_phase9_10_backend.py",
+      "outcome": "passed",
+      "duration": 0.0104,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase9_10_backend.py::test_phase10_model_version_is_recorded",
+      "name": "test_phase10_model_version_is_recorded",
+      "file": "tests/test_phase9_10_backend.py",
+      "outcome": "passed",
+      "duration": 0.0046,
+      "error": null
+    },
+    {
+      "nodeid": "tests/test_phase9_10_backend.py::test_phase10_sensitive_payment_fields_are_not_stored",
+      "name": "test_phase10_sensitive_payment_fields_are_not_stored",
+      "file": "tests/test_phase9_10_backend.py",
+      "outcome": "passed",
+      "duration": 0.19,
+      "error": null
+    }
+  ]
+}

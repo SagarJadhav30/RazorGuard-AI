@@ -1,0 +1,526 @@
+{
+  "model_type": "LightGBM Classifier",
+  "n_total_samples": 2000,
+  "n_train_samples": 1600,
+  "n_heldout_test_samples": 400,
+  "test_fraud_count": 32,
+  "test_legit_count": 368,
+  "metrics": {
+    "roc_auc": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "pr_auc": 1.0,
+    "accuracy": 1.0
+  },
+  "confusion_matrix": {
+    "true_negatives": 368,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "true_positives": 32
+  },
+  "cost_analysis": {
+    "cost_per_false_negative_usd": 450.0,
+    "cost_per_false_positive_usd": 15.0,
+    "baseline_unmitigated_fraud_cost_usd": 14400.0,
+    "model_false_negative_cost_usd": 0.0,
+    "model_false_positive_cost_usd": 0.0,
+    "model_total_loss_cost_usd": 0.0,
+    "net_financial_savings_usd": 14400.0,
+    "savings_percentage": 100.0,
+    "average_legitimate_transaction_value_usd": 70.86,
+    "average_fraudulent_transaction_value_usd": 758.6,
+    "false_positive_transaction_value_usd": 0.0,
+    "false_negative_transaction_value_usd": 0.0,
+    "transactions_reviewed_without_ai": 400,
+    "transactions_reviewed_with_ai": 400,
+    "fraudulent_transactions_caught": 32,
+    "legitimate_transactions_incorrectly_blocked": 0
+  },
+  "feature_names": [
+    "amount",
+    "distance_from_home",
+    "distance_from_last_tx",
+    "velocity_1h",
+    "velocity_24h",
+    "ratio_to_median_price",
+    "repeat_retailer",
+    "used_chip",
+    "used_pin",
+    "online_order",
+    "ip_country_mismatch",
+    "device_trust_score",
+    "high_risk_category",
+    "hour_of_day"
+  ],
+  "feature_labels": {
+    "amount": "Transaction Amount ($)",
+    "distance_from_home": "Distance from Home (miles)",
+    "distance_from_last_tx": "Distance from Last Tx (miles)",
+    "velocity_1h": "1-Hour Tx Count",
+    "velocity_24h": "24-Hour Tx Count",
+    "ratio_to_median_price": "Ratio to Historical Median Price",
+    "repeat_retailer": "Repeat Retailer (0/1)",
+    "used_chip": "EMV Chip Used (0/1)",
+    "used_pin": "PIN Entered (0/1)",
+    "online_order": "Online Transaction (0/1)",
+    "ip_country_mismatch": "IP/Billing Country Mismatch (0/1)",
+    "device_trust_score": "Device Trust Score (0.0-1.0)",
+    "high_risk_category": "High-Risk Merchant Category (0/1)",
+    "hour_of_day": "Transaction Hour of Day (0-23)"
+  },
+  "roc_curve_data": [
+    {
+      "fpr": 0.0,
+      "tpr": 0.0,
+      "threshold": Infinity
+    },
+    {
+      "fpr": 0.0,
+      "tpr": 0.0312,
+      "threshold": 0.9996
+    },
+    {
+      "fpr": 0.0,
+      "tpr": 1.0,
+      "threshold": 0.999
+    },
+    {
+      "fpr": 0.019,
+      "tpr": 1.0,
+      "threshold": 0.0001
+    },
+    {
+      "fpr": 0.0272,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.0326,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.1603,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.1658,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.2418,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.2473,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.2799,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.2935,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.2989,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.3125,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.3451,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.3505,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.3804,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.3832,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.394,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.4076,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.4158,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.4239,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.4348,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.4375,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.4538,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.4592,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.481,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.4837,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.4946,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.5245,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.5299,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.5435,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.5489,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.5625,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.5842,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.6603,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.6658,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.6848,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.6957,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.7038,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.712,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.7255,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.7582,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.7636,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.7826,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.9484,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.9538,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.9864,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 0.9891,
+      "tpr": 1.0,
+      "threshold": 0.0
+    },
+    {
+      "fpr": 1.0,
+      "tpr": 1.0,
+      "threshold": 0.0
+    }
+  ],
+  "pr_curve_data": [
+    {
+      "precision": 0.08,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.0821,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.0836,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.0853,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.087,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.0886,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.0904,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.0922,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.0941,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.0961,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.0979,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.1,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.1032,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.1056,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.1088,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.1127,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.1164,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.1194,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.1226,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.126,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.129,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.1333,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.1441,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.1488,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.1561,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.1624,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.1768,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.1905,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.1988,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.2092,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.2177,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.237,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.25,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.2667,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.2832,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.3019,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.3232,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.3678,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.4,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.4384,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.4776,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.5333,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.6038,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.6957,
+      "recall": 1.0
+    },
+    {
+      "precision": 0.9143,
+      "recall": 1.0
+    },
+    {
+      "precision": 1.0,
+      "recall": 0.875
+    },
+    {
+      "precision": 1.0,
+      "recall": 0.6562
+    },
+    {
+      "precision": 1.0,
+      "recall": 0.4375
+    },
+    {
+      "precision": 1.0,
+      "recall": 0.2188
+    },
+    {
+      "precision": 1.0,
+      "recall": 0.0
+    }
+  ]
+}
