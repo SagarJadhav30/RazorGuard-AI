@@ -10,7 +10,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class Settings(BaseSettings):
     PROJECT_NAME: str = "RazorGuard AI"
     VERSION: str = "1.0.0"
-    MODEL_VERSION: str = "risk-model-v1"
+    MODEL_VERSION: str = "risk-model-v1" 
     API_V1_STR: str = "/api/v1"
     ENVIRONMENT: str = "development" 
     DEBUG: bool = True
