@@ -4,7 +4,7 @@ RazorGuard AI - Core Configuration Settings
 
 import os
 from typing import List
-from pydantic_settings import BaseSettings, SettingsConfigDict 
+from pydantic_settings import BaseSettings, SettingsConfigDict  
 
 
 class Settings(BaseSettings):
