@@ -12,7 +12,7 @@ class Settings(BaseSettings):
     VERSION: str = "1.0.0"
     MODEL_VERSION: str = "risk-model-v1"
     API_V1_STR: str = "/api/v1"
-    ENVIRONMENT: str = "development"
+    ENVIRONMENT: str = "development" 
     DEBUG: bool = True
 
     HOST: str = "0.0.0.0"
