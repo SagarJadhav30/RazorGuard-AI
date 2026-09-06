@@ -23,7 +23,7 @@ def main():
     service = ExplanationService(models_dir="models")
 
     for key, scenario in presets.items():
-        print(f"\n--- Testing Scenario: {scenario['name']} ---")
+        print(f"\n--- Testing Scenario: {scenario['name']} ---") 
         print(f"Description: {scenario['description']}")
 
         result = service.explain_transaction(scenario["data"])
