@@ -2,7 +2,7 @@
 RazorGuard AI - Synthetic Payment Transaction Data Generator
 
 Generates realistic payment transaction datasets with domain-informed fraud signals,
-feature relationships, and non-linear interactions for robust ML training.
+feature relationships, and non-linear interactions for robust ML training. 
 """
 
 import numpy as np
