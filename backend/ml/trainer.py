@@ -33,7 +33,7 @@ ARTIFACTS_DIR = os.path.join(os.path.dirname(__file__), "artifacts")
 
 def train_and_evaluate_model(
     n_samples: int = 10000,
-    fraud_rate: float = 0.08,
+    fraud_rate: float = 0.08, 
     random_state: int = 42,
     cost_per_false_negative: float = 450.0,  # Avg dollar loss per missed fraud
     cost_per_false_positive: float = 15.0    # Friction/support cost per false block
