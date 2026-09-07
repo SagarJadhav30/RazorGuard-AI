@@ -28,7 +28,7 @@ except ImportError:
 
 from backend.ml.data_generator import generate_payment_dataset, FEATURE_NAMES, FEATURE_LABELS
 
-ARTIFACTS_DIR = os.path.join(os.path.dirname(__file__), "artifacts")
+ARTIFACTS_DIR = os.path.join(os.path.dirname(__file__), "artifacts") 
 
 
 def train_and_evaluate_model(
