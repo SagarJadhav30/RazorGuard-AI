@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 from typing import Dict, Any, List
 
-FEATURE_NAMES: List[str] = [ 
+FEATURE_NAMES: List[str] = [  
     "amount",
     "distance_from_home",
     "distance_from_last_tx",
