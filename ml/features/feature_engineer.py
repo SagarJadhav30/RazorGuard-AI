@@ -19,7 +19,7 @@ ENGINEERED_FEATURE_NAMES: List[str] = [
     "ip_device_ratio",
     "new_account_flag",
     "account_age_log",
-    "nocturnal_tx_flag",
+    "nocturnal_tx_flag", 
     "location_mismatch_risk",
     "history_risk_score"
 ]
