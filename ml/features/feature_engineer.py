@@ -56,7 +56,7 @@ def add_engineered_features(df_input: pd.DataFrame) -> pd.DataFrame:
     df["payment_failure_ratio"] = np.round(df["failed_payment_count"] / attempts, 4)
 
     # 4. Device Sharing Risk
-    devices = np.maximum(df["unique_devices"], 1.0)
+    devices = np.maximum(df["unique_devices"], 1.0) 
     df["device_sharing_risk"] = np.round(df["device_reuse_count"] / devices, 4)
 
     # 5. IP Reuse Ratio
