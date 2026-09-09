@@ -11,7 +11,7 @@ from sklearn.base import BaseEstimator, TransformerMixin
 from typing import List, Dict, Any
 
 
-ENGINEERED_FEATURE_NAMES: List[str] = [
+ENGINEERED_FEATURE_NAMES: List[str] = [ 
     "velocity_ratio_24h_7d",
     "amount_ratio_to_avg",
     "payment_failure_ratio",
