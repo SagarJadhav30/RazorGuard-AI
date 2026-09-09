@@ -5,7 +5,7 @@ Constructs domain-informed behavioral risk features from raw payment transaction
 Guarantees zero target leakage and supports both single-row inference and batch datasets.
 """
 
-import numpy as np
+import numpy as np 
 import pandas as pd
 from sklearn.base import BaseEstimator, TransformerMixin
 from typing import List, Dict, Any
