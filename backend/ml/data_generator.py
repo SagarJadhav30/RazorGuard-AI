@@ -20,7 +20,7 @@ FEATURE_NAMES: List[str] = [
     "used_chip",
     "used_pin",
     "online_order",
-    "ip_country_mismatch",
+    "ip_country_mismatch", 
     "device_trust_score", 
     "high_risk_category",
     "hour_of_day"
