@@ -17,7 +17,7 @@ from ml.preprocessing.pipeline import RazorGuardPreprocessor, DROP_COLUMNS
 class RazorGuardPredictor:
     """
     Production Predictor Wrapper for single-row and batch inference.
-    """
+    """ 
     def __init__(self, models_dir: str = "models"):
         self.models_dir = models_dir
         self.preprocessor_path = os.path.join(models_dir, "preprocessor.joblib")
