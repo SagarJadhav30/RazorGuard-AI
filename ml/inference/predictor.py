@@ -6,7 +6,7 @@ thread-safe fraud probability and anomaly score predictions.
 """
 
 import os
-import joblib
+import joblib 
 import numpy as np
 import pandas as pd
 from typing import Dict, Any, List, Union
