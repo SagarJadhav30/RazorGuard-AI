@@ -12,7 +12,7 @@ Tests:
 
 import pytest
 from fastapi.testclient import TestClient
-from backend.app.main import app
+from backend.app.main import app 
 from backend.app.demo.scenarios import DEMO_SCENARIOS, get_all_scenarios_metadata, get_scenario_by_id
 
 client = TestClient(app)
