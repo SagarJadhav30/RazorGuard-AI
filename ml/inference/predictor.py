@@ -101,5 +101,5 @@ class RazorGuardPredictor:
 
         return {
             "fraud_probability": prob,
-            "anomaly_score": anom_score
+            "anomaly_score": anom_score 
         }
