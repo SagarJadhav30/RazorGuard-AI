@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS transactions (
     country VARCHAR(10) NOT NULL, 
     raw_payload_json JSONB NOT NULL,
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
-);
+); 
 
 CREATE TABLE IF NOT EXISTS model_versions (
     id BIGSERIAL PRIMARY KEY,
