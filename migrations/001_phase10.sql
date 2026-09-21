@@ -61,7 +61,7 @@ CREATE TABLE IF NOT EXISTS audit_logs (
     transaction_id VARCHAR(64) REFERENCES transactions(transaction_id),
     model_version VARCHAR(64) NOT NULL,
     fraud_probability DOUBLE PRECISION,
-    risk_score INTEGER,
+    risk_score INTEGER, 
     decision VARCHAR(20),
     top_risk_factors JSONB NOT NULL DEFAULT '[]'::jsonb,
     action VARCHAR(50) NOT NULL,
