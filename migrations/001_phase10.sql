@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS risk_factors (
     id BIGSERIAL PRIMARY KEY,
     transaction_id VARCHAR(64) NOT NULL UNIQUE REFERENCES risk_predictions(transaction_id),
     risk_factors_json JSONB NOT NULL DEFAULT '[]'::jsonb,
-    protective_factors_json JSONB NOT NULL DEFAULT '[]'::jsonb,
+    protective_factors_json JSONB NOT NULL DEFAULT '[]'::jsonb, 
     llm_explanation_json JSONB NOT NULL DEFAULT '{}'::jsonb
 );
 
