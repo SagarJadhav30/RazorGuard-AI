@@ -68,7 +68,7 @@ CREATE TABLE IF NOT EXISTS audit_logs (
     actor VARCHAR(64) NOT NULL,
     reason TEXT NOT NULL,
     request_id VARCHAR(64) NOT NULL,
-    event_type VARCHAR(50) NOT NULL,
+    event_type VARCHAR(50) NOT NULL, 
     action_taken VARCHAR(50) NOT NULL,
     details_json JSONB NOT NULL DEFAULT '{}'::jsonb
 );
