@@ -49,7 +49,7 @@ CREATE TABLE IF NOT EXISTS verification_actions (
     id BIGSERIAL PRIMARY KEY,
     transaction_id VARCHAR(64) NOT NULL REFERENCES transactions(transaction_id),
     previous_decision VARCHAR(20) NOT NULL,
-    analyst_action VARCHAR(50) NOT NULL,
+    analyst_action VARCHAR(50) NOT NULL, 
     analyst_notes TEXT,
     analyst_id VARCHAR(64) NOT NULL,
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
