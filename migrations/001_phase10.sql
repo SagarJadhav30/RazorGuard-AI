@@ -70,7 +70,7 @@ CREATE TABLE IF NOT EXISTS audit_logs (
     request_id VARCHAR(64) NOT NULL,
     event_type VARCHAR(50) NOT NULL, 
     action_taken VARCHAR(50) NOT NULL,
-    details_json JSONB NOT NULL DEFAULT '{}'::jsonb
+    details_json JSONB NOT NULL DEFAULT '{}'::jsonb 
 );
 
 CREATE INDEX IF NOT EXISTS ix_transactions_customer_created ON transactions(customer_id, created_at DESC);
