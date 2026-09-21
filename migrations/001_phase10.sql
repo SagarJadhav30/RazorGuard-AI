@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS transactions (
     amount NUMERIC(18, 2) NOT NULL CHECK (amount > 0),
     currency VARCHAR(3) NOT NULL DEFAULT 'USD',
     merchant_category VARCHAR(50) NOT NULL,
-    payment_method VARCHAR(50) NOT NULL,
+    payment_method VARCHAR(50) NOT NULL, 
     country VARCHAR(10) NOT NULL,  
     raw_payload_json JSONB NOT NULL,
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW() 
