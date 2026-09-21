@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS model_versions (
     version VARCHAR(64) NOT NULL UNIQUE,
     model_type VARCHAR(100) NOT NULL,
     artifact_fingerprint VARCHAR(128),
-    is_active BOOLEAN NOT NULL DEFAULT TRUE,
+    is_active BOOLEAN NOT NULL DEFAULT TRUE, 
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
