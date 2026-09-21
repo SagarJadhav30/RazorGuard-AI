@@ -75,7 +75,7 @@ CREATE TABLE IF NOT EXISTS audit_logs (
 
 CREATE INDEX IF NOT EXISTS ix_transactions_customer_created ON transactions(customer_id, created_at DESC);
 CREATE INDEX IF NOT EXISTS ix_risk_predictions_decision_created ON risk_predictions(decision, created_at DESC);
-CREATE INDEX IF NOT EXISTS ix_risk_predictions_risk_level_created ON risk_predictions(risk_level, created_at DESC);
+CREATE INDEX IF NOT EXISTS ix_risk_predictions_risk_level_created ON risk_predictions(risk_level, created_at DESC); 
 CREATE INDEX IF NOT EXISTS ix_verification_actions_transaction_created ON verification_actions(transaction_id, created_at DESC);
 CREATE INDEX IF NOT EXISTS ix_audit_logs_transaction_timestamp ON audit_logs(transaction_id, timestamp DESC);
 CREATE INDEX IF NOT EXISTS ix_audit_logs_request_id ON audit_logs(request_id);
