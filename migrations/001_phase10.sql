@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS transactions (
 ); 
 
 CREATE TABLE IF NOT EXISTS model_versions (
-    id BIGSERIAL PRIMARY KEY,
+    id BIGSERIAL PRIMARY KEY, 
     version VARCHAR(64) NOT NULL UNIQUE,
     model_type VARCHAR(100) NOT NULL,
     artifact_fingerprint VARCHAR(128),
