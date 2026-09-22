@@ -8,7 +8,7 @@ from sqlalchemy.exc import OperationalError
 from backend.app.main import app
 from backend.app.database.session import get_db
 from backend.app.api.v1.endpoints.risk import explanation_service 
-from ml.utils.data_generator import get_preset_scenarios
+from ml.utils.data_generator import get_preset_scenarios 
 
 client = TestClient(app) 
 
