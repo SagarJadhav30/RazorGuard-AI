@@ -10,7 +10,7 @@ from backend.app.database.session import get_db
 from backend.app.api.v1.endpoints.risk import explanation_service
 from ml.utils.data_generator import get_preset_scenarios
 
-client = TestClient(app)
+client = TestClient(app) 
 
 
 def test_health_check_endpoints():
