@@ -43,7 +43,7 @@ def test_predict_valid_transaction():
     assert "X-Request-ID" in resp.headers
 
 
-def test_predict_invalid_transaction_negative_amount():
+def test_predict_invalid_transaction_negative_amount(): 
     """Verify POST /api/v1/risk/predict rejects negative amount with 422 Unprocessable Entity."""
     presets = get_preset_scenarios()
     invalid_payload = presets["standard_grocery_inperson"]["data"].copy()
