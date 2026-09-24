@@ -75,7 +75,7 @@ export default function App() {
 
   const open = useCallback((txId) => {
     setSelectedId(txId);
-    setPage('investigation');
+    setPage('investigation'); 
   }, []);
 
   /* ── derived dashboard stats ── */
