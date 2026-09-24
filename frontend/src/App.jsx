@@ -2,7 +2,7 @@ import { useEffect, useState, useCallback } from 'react';
 import axios from 'axios';
 import {
   ResponsiveContainer, PieChart, Pie, Cell,
-  AreaChart, Area, LineChart, Line,
+  AreaChart, Area, LineChart, Line, 
   XAxis, YAxis, CartesianGrid, Tooltip
 } from 'recharts';
 import {
