@@ -9,7 +9,7 @@ import {
   Activity, AlertTriangle, ArrowRight, BarChart3, Bell, ChevronRight,
   DollarSign, Eye, FileText, LayoutDashboard, Menu, RefreshCw,
   Shield, ShieldAlert, Sparkles, TrendingUp
-} from 'lucide-react';
+} from 'lucide-react'; 
 import InvestigationPage from './components/InvestigationPage';
 import ModelPerformancePage from './components/ModelPerformancePage';
 import FinancialImpactPage from './components/FinancialImpactPage';
