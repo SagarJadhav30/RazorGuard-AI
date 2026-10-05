@@ -5,7 +5,7 @@ from backend.app.services.explanation_service import ExplanationService
 svc = ExplanationService("models")
 
 for amt in [75, 120, 150, 180, 220, 280, 350]:
-    for age in [5, 10, 15, 20, 30, 45]:
+    for age in [5, 10, 15, 20, 30, 45]: 
         for tx_count in [1, 2, 3, 5]:
             for avg_amt in [30.0, 50.0, 70.0]:
                 s = {
