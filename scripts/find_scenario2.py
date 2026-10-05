@@ -27,7 +27,7 @@ for amt in [75, 120, 150, 180, 220, 280, 350]:
                     "previous_fraud_count": 0,
                     "previous_chargeback_count": 0,
                     "unique_devices": 1,
-                    "unique_ips": 1,
+                    "unique_ips": 1, 
                     "billing_shipping_match": 1,
                     "country_change": 0,
                     "device_reuse_count": 1,
