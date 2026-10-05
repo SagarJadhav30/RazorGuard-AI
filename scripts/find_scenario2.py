@@ -2,7 +2,7 @@ import os
 import sys
 from backend.app.services.explanation_service import ExplanationService
 
-svc = ExplanationService("models")
+svc = ExplanationService("models") 
 
 for amt in [75, 120, 150, 180, 220, 280, 350]:
     for age in [5, 10, 15, 20, 30, 45]: 
