@@ -10,7 +10,7 @@ for amt in [75, 120, 150, 180, 220, 280, 350]:
             for avg_amt in [30.0, 50.0, 70.0]:
                 s = { 
                     "transaction_id": f"TXN_S2_TEST",
-                    "customer_id": "CUST_NEW_9012",
+                    "customer_id": "CUST_NEW_9012", 
                     "merchant_id": "MERCH_ELEC_09",
                     "amount": float(amt), 
                     "currency": "USD",
