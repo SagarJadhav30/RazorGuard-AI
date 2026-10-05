@@ -16,7 +16,7 @@ for amt in [75, 120, 150, 180, 220, 280, 350]:
                     "currency": "USD",
                     "merchant_category": "electronics",
                     "payment_method": "credit_card",
-                    "country": "US", 
+                    "country": "US",  
                     "account_age_days": age,
                     "customer_transaction_count": tx_count,
                     "transactions_last_24h": 1,
