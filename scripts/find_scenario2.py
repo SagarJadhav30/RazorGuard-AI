@@ -12,7 +12,7 @@ for amt in [75, 120, 150, 180, 220, 280, 350]:
                     "transaction_id": f"TXN_S2_TEST",
                     "customer_id": "CUST_NEW_9012",
                     "merchant_id": "MERCH_ELEC_09",
-                    "amount": float(amt),
+                    "amount": float(amt), 
                     "currency": "USD",
                     "merchant_category": "electronics",
                     "payment_method": "credit_card",
