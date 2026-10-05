@@ -8,7 +8,7 @@ for amt in [75, 120, 150, 180, 220, 280, 350]:
     for age in [5, 10, 15, 20, 30, 45]: 
         for tx_count in [1, 2, 3, 5]:
             for avg_amt in [30.0, 50.0, 70.0]:
-                s = {
+                s = { 
                     "transaction_id": f"TXN_S2_TEST",
                     "customer_id": "CUST_NEW_9012",
                     "merchant_id": "MERCH_ELEC_09",
